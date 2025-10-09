@@ -25,7 +25,9 @@ const Layout = () => {
                     </a>
                   </li>
                   <li>
-                    <a class="menutrai">SINH VIEN</a>
+                    <a class="menutrai" href="/trang2">
+                      SINH VIEN
+                    </a>
                   </li>
                 </ul>
               </nav>
