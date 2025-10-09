@@ -7,6 +7,9 @@ const Trang1 = () => {
   return (
     <div style={{ padding: "20px" }}>
       <h2>Danh sách sản phẩm</h2>
+      <button onClick={() => navigate("/sinhvien")}>
+        Xem thông tin sinh viên
+      </button>
       <div
         style={{
           display: "grid",
