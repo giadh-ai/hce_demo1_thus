@@ -1,5 +1,5 @@
 const Trang2 = () => {
-  var dssv = [
+  const dssv = [
     {
       id: 1,
       hoten: "Nguyễn Văn An111",
@@ -33,32 +33,52 @@ const Trang2 = () => {
   return (
     <div
       style={{
-        alignContent: "center",
-        display: "grid",
-        gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))",
-        gap: "16px",
+        minHeight: "100vh", // Chiếm toàn bộ chiều cao màn hình
+        display: "flex",
+        justifyContent: "center", // Căn giữa ngang
+
+        backgroundColor: "#f9f9f9", // Tuỳ chọn
+        padding: "20px",
       }}
     >
-      {dssv.map((motsinhvien) => {
-        return (
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))",
+          gap: "16px",
+          maxWidth: "1000px", // Giới hạn chiều rộng
+          width: "100%",
+        }}
+      >
+        {dssv.map((motsinhvien) => (
           <div
+            key={motsinhvien.id}
             style={{
+              height: "300px",
               border: "1px solid #ddd",
               borderRadius: "8px",
               padding: "10px",
               textAlign: "center",
+              backgroundColor: "#fff",
+              boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
             }}
           >
             <img
               src={motsinhvien.anh}
-              style={{ height: "140px", objectFit: "contain" }}
+              alt={motsinhvien.hoten}
+              style={{
+                height: "140px",
+
+                objectFit: "cover",
+                borderRadius: "6px",
+              }}
             />
-            <p>
-              <h3>{motsinhvien.hoten}</h3>
-            </p>
+            <h3 style={{ margin: "10px 0 5px" }}>{motsinhvien.hoten}</h3>
+            <p>{motsinhvien.lop}</p>
+            <p>{motsinhvien.email}</p>
           </div>
-        );
-      })}
+        ))}
+      </div>
     </div>
   );
 };
