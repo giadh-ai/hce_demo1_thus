@@ -1,12 +1,12 @@
 import "./css/main.css";
 
 const Home = () => {
-  var tenlop = "K19 Cao đẳng Kinh tế TP.HCM";
+  var tenlop = "K19 Cao đẳng Kinh tế TP.HCM111";
   var ngay = 2;
   var thang = 10;
-  var dssv = ["Nguyễn Văn An", "Trần Văn Bình", "Hà Văn Cường"];
+  var dssv = ["Nguyễn Văn An111", "Trần Văn Bình", "Hà Văn Cường"];
   var ds2 = [
-    { id: 1, hoten: "Nguyễn Văn An", lop: "K19", email: "abc@1234.edu.vn" },
+    { id: 1, hoten: "Nguyễn Văn An111", lop: "K19", email: "abc@1234.edu.vn" },
     { id: 2, hoten: "Trần Văn Bình", lop: "K19", email: "abc@1234.edu.vn" },
     { id: 3, hoten: "Hà Văn Cường", lop: "K19", email: "abc@cuong.edu.vn" },
     { id: 4, hoten: "Nguyễn Văn Dũng", lop: "K19", email: "abc@cuong.edu.vn" },
