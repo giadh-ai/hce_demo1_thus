@@ -33,7 +33,9 @@ const Layout = () => {
               </nav>
             </div>
             <div style={{ width: "1000px" }}>
-              <img src={logo} width="500" height="80" />
+              <a href="/">
+                <img src={logo} width="500" height="80" />
+              </a>
             </div>
             <div>Tim kiem</div>
           </div>
