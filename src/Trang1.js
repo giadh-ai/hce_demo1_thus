@@ -1,7 +1,6 @@
 // import products from "./data/products";
 import { products } from "./data/product";
-
-//import React from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 const Trang1 = () => {
   const navigate = useNavigate();
@@ -29,7 +28,7 @@ const Trang1 = () => {
             <img
               src={p.image}
               alt={p.title}
-              style={{ height: "140px", objectFit: "contain" }}
+              style={{ width: "100px", height: "100px", objectFit: "contain" }}
             />
             <h4>{p.title}</h4>
             <p>${p.price}</p>
