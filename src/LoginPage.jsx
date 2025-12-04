@@ -19,7 +19,7 @@ const LoginPage = () => {
           "user",
           JSON.stringify({ username, role: "user" })
         );
-        alert("✅ Đăng nhập thành công!");
+        alert("✅ Đăng nhập thành công111!");
         navigate("/");
       } else {
         alert("❌ Vui lòng nhập đầy đủ thông tin!");
