@@ -12,7 +12,7 @@ const ListProducts_SP_Admin = () => {
       .from("product1")
       .select("*")
       .order("id", { ascending: true });
-    if (error) console.error("Lỗi:", error.message);
+    if (error) console.error("Lỗi 1111:", error.message);
     else setProducts(data);
   };
 
